@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Branchsubjects {
+  public static void main(String args[]) {
+    Scanner c = new Scanner(System.in);
+    System.out.println("Enter student year");
+    int year = c.nextInt();
+    System.out.println("Enter student branch");
+    char ch = c.next().charAt(0);
+    switch (year) {
+      case 1:
+        System.out.println("1st year");
+        switch (ch) {
+          case 'c':
+            System.out.println("Subjects maths physics computer");
+            // break;
+          case 'm':
+            System.out.println("Subjects maths physics mechanical");
+            // break;
+          case 'e':
+            System.out.println("Subjects maths physics electronics");
+            // break;
+        }
+        break;
+      case 2:
+        System.out.println("2nd year");
+        switch (ch) {
+          case 'c':
+            System.out.println("Subjects java mysql computer");
+            // break;
+          case 'm':
+            System.out.println("Subjects thermodynamics automobile mechanical");
+            // break;
+          case 'e':
+            System.out.println("Subjects networkdevices electronics");
+            // break;
+        }
+        break;
+      default:
+        System.out.println("Invalid input");
+        break;
+
+    }
+  }
+}
